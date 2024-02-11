@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+      <div class="container-flex">
+        <div class="container">
+            
+            <form action="">
+                <div class="signin-heading" >
+                    <h1 id="title">Sign up</h1>
+                </div>
+                <div class="input-field" id="username">
+                <input type="text" name="username"placeholder="username"required><br>
+            </div>
+                <div class="input-field">
+                <input type="email"name="email"placeholder="email"required><br>
+            </div>
+                <div class="input-field">
+                <input type="password"name="password"placeholder="password"required><br>
+            </div>
+                <div class="input-field"id="confirmpwd">
+                <input type="password"name="cpassword"placeholder="confirm password"required><br>
+
+            </div>
+            
+                <div class="btn-field">
+                    <button type="button" id="signupbtn"><h2>Sign up</h2></button>
+                    <button type="button" id="signinbtn"class="disable"><h2>Sign in</h2></button>
+                </div>
+            </form>
+        </div>
+      </div>
+
+      <script>
+        var title = document.getElementById("title");
+        var signupbtn = document.getElementById("signupbtn");
+        var signinbtn = document.getElementById("signinbtn");
+        var username = document.getElementById("username");
+        var confirmpwd = document.getElementById("confirmpwd");
+       
+
+
+
+     signinbtn.onclick = function(){
+        title.innerHTML = "Sign in";
+        username.style.maxHeight = "0";
+        confirmpwd.style.maxHeight = "0";
+       
+        signinbtn.classList.remove("disable");
+        signupbtn.classList.add("disable");
+
+         }
+    signupbtn.onclick = function(){
+        title.innerHTML = "Sign up";
+        username.style.maxHeight = "60px";
+        confirmpwd.style.maxHeight = "60px";
+        signinbtn.classList.add("disable");
+        signupbtn.classList.remove("disable");
+
+        }
+
+        
+      </script>
+</body>
+</html>

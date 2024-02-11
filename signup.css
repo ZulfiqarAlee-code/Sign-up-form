@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(160 165 204);
+}
+.container-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+    
+}
+.container {
+    margin: 52px 0px;
+}
+form{
+    background-color: #c6c6c3;
+    border: 1px solid #c6c6c3;
+    padding: 16px 86px;
+    border-radius: 9px;
+}
+.signin-heading{
+    color: #3c00a0;
+}
+.btn-field button{
+   flex-basis: 48%;
+   background-color: #6a23e1;
+   color: #fff;
+   border-radius: 20px;
+   border: 0;
+   outline: 0;
+   cursor: pointer;
+   transition: background-color 0.1s;
+}
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+input{
+    width: 100%;
+    background-color: #f6f6f6;
+    padding: 18px 35px;
+    border-radius: 25px;
+    border: 0;
+    outline: 0;
+    
+}
+.input-field{
+   
+    margin: 15px 0px;
+    border-radius:  3px;
+    display: flex;
+    align-items: center;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+.btn-field button.disable{
+    background-color: #aeaeae;
+    color: #555;
+}
